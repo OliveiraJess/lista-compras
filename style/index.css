@@ -1,6 +1,5 @@
 @import url('reset/normalize.css');
-/* @import url('reset/reset.css'); */
-@import url('components/buttons.css');
+@import url('reset/reset.css');
 
 
 body {
