@@ -1,0 +1,84 @@
+
+.click {
+    position: absolute;
+    width: 100%;
+    height: var(--clickArea);
+    z-index: 2;
+
+}
+
+.drop_down {
+    width: var(--dropWidth);
+    position: relative;
+}
+
+img {
+    height: var(--arrowSize);
+    position: absolute;
+    right: 0;
+    top: calc(50% - (var(--arrowSize)/2));
+}
+
+button[filter] {
+    text-align: left;
+    border: none;
+    box-shadow: 0px 0px 4px #00000040;
+    padding: 0 var(--imgSpace) 0 10px;
+    background-color: #ffffff;
+    min-width: 100%;
+    height: var(--dropHeight);
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+button[filter]:focus {
+    border: 2px solid blue;
+
+}
+
+div[options = 'open'],
+div[options = 'close'] {
+    margin-top: 4px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #00000040;
+    overflow-y: scroll;
+    transition: all .5s ease-in-out;
+
+}
+
+div[options = 'open']::-webkit-scrollbar,
+div[options = 'close']::-webkit-scrollbar {
+    appearance: none;
+}
+
+div[options = 'open'] {
+    height: 50px;
+
+}
+
+div[options = 'close'] {
+    height: 0px;
+
+}
+
+div[options = 'open'] li, div[options = 'close'] li {
+    margin: 3px 8px;
+
+}
+
+p[activated ='false'] {
+    transform: translate(10px, 23px);
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+
+p[activated = 'true'] {
+    transform: translate(0, 0);
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+
+}

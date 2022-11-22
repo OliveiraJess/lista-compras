@@ -1,0 +1,9 @@
+/* dropDown */
+.drop_down {
+    --imgSpace: 20px;
+    --arrowSize: min(70%, var(--imgSpace));
+    --dropWidth: 30%;
+    --dropHeight: 30px;
+    --clickArea: calc(16px + var(--dropHeight));
+
+}
