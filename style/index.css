@@ -4,5 +4,37 @@
 
 body {
     height: 100vh;
+
 }
 
+#navigation {
+    background-color: #98A8F8;
+    height: 150px;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#filters {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+label {
+    display: block;
+}
