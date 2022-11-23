@@ -1,0 +1,47 @@
+@import url("/style/variaveis.css");
+
+.container__list {
+  align-items: center;
+  background-color: var(--pastel);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card__item {
+  background-color: var(--lilas);
+  display: flex;
+  width: 80%;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card__item > input[type='checkbox']:checked  + div {
+  text-decoration:line-through;
+}
+
+.card__situation {
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(102, 233, 183);
+  height: 30px;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.situation__label {
+  padding: 5px;
+  border-right: 1px solid black;
+}
+
+.situation__item {
+  padding: 5px;
+}
+
+.button__checkbox .button__delete .button__edit {
+  width: 30px;
+  height: 30px;
+  font: inherit;
+}
