@@ -1,8 +1,12 @@
 @import url("/style/variables.css");
 
+
+main {
+  margin-top: 15px;
+}
+
 .container__list {
   align-items: center;
-  background-color: var(--pastel);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -14,16 +18,16 @@
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px var(--gray);
   display: flex;
-  height: 40px;
   justify-content: space-around;
-  margin: 5px;
-  padding-right: 3px;
-  width: 90%;
 }
 
-.card__item>input[type='checkbox']:checked+div {
+.grab {
+  align-items: center;
+  cursor: pointer;
+}
+
+.card__item>input[type='checkbox']:checked+ .card__situation {
   background-color: var(--gray);
-  /* text-decoration: line-through; */
 }
 
 .card__situation {
@@ -31,9 +35,6 @@
   background-color: rgb(102, 233, 183);
   border-radius: 10px;
   display: flex;
-  height: 30px;
-  margin: 0 3px;
-  padding: 0 2px 0 2px;
 }
 
 .situation__label {
@@ -41,8 +42,9 @@
   padding: 5px;
 }
 
-.situation__item {
-  padding: 5px;
+.buttons {
+  display: flex;
+  align-items: center;
 }
 
 .button__delete {
@@ -51,9 +53,7 @@
   border-radius: 5px;
   cursor: pointer;
   display: flex;
-  height: 25px;
   justify-content: center;
-  width: 25px;
 }
 
 .button__edit {
@@ -62,11 +62,64 @@
   border-radius: 5px;
   cursor: pointer;
   display: flex;
-  height: 25px;
   justify-content: center;
-  width: 25px;
 }
 
-.button__checkbox {
-  margin-left: 3px;
+@media screen and (min-width: 320px) {
+
+  .card__item {
+    height: 40px;
+    margin: 5px;
+    padding-right: 3px;
+    width: 90%;
+  }
+
+  .grab {
+    margin: 0px 5px 0px 10px;
+    padding-bottom: 2px;
+  }
+
+  .card__situation {
+    height: 30px;
+    margin: 0 3px;
+    padding: 0 2px 0 2px;
+    width: 90%;
+  }
+
+  .situation__label {
+    padding: 5px;
+  }
+
+  .situation__item {
+    padding: 5px;
+  }
+
+  .button__delete {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  .button__edit {
+    height: 25px;
+    width: 25px;
+  }
+
+  .button__checkbox {
+    margin-left: 3px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .card__item {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card__item {
+    width: 50%;
+  }
 }

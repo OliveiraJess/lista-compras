@@ -3,11 +3,14 @@
 @import url('variables.css');
 @import url('buttons/dropDown.css');
 @import url("/style/item/item.css");
+@import url("/style/variables.css");
+
 
 
 body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--pastel);
 }
 
 #navigation {
