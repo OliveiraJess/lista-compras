@@ -1,0 +1,111 @@
+
+.click {
+    position: absolute;
+    width: 100%;
+    height: var(--clickArea);
+    z-index: 2;
+
+}
+
+.drop_down {
+    width: var(--dropWidth);
+    position: relative;
+}
+
+
+
+/* arrown */
+img[activated='false'],
+img[activated='true'] {
+    height: var(--arrowSize);
+    position: absolute;
+    right: 0;
+    top: calc(50% - (var(--arrowSize)/2));
+    transition: all .5s ease-in-out;
+    
+}
+
+img[activated='true'] {
+    transform: rotate(180deg);
+
+}
+
+
+
+
+button[filter] {
+    text-align: left;
+    border: none;
+    box-shadow: 0px 0px 4px #00000040;
+    padding: 0 var(--imgSpace) 0 10px;
+    background-color: #ffffff;
+    min-width: 100%;
+    height: var(--inputHeight);
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+/* options */
+div[options = 'open'],
+div[options = 'close'] {
+    position: absolute;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #00000040;
+    overflow-y: scroll;
+    transition: all .5s ease-in-out;
+}
+
+div[options = 'open']::-webkit-scrollbar,
+div[options = 'close']::-webkit-scrollbar {
+    appearance: none;
+    width: 0px;
+}
+
+div[options = 'open'] {
+    height: var(--optionsHeight);
+
+}
+
+div[options = 'close'] {
+    height: 0px;
+
+}
+
+div[options = 'open'] ul, div[options = 'close'] ul {
+    display: flex;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+
+
+
+/* placeHoder */
+p[activated ='false'],
+p[activated = 'true'] {
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+
+}
+
+
+p[activated ='false'] {
+    transform: translate(10px, var(--placeHoderY));
+
+    
+}
+
+p[activated = 'true']  {
+    transform: translate(0, 0);
+
+}
