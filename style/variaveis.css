@@ -3,12 +3,15 @@
 :root {
 
   /* colors */
-  --branco: #F9F9F9;
-  --lilas: #BCCEF8;
+  --black: #181818;
+  --delete: #FF5858;
+  --edit: #CDFCF6;
+  --gray: #D8D8D8;
+  --lilac: #BCCEF8;
   --pastel: #FAF7F0;
-  --preto: #181818;
-  --roxo: #98A8F8;
+  --purple: #98A8F8;
+  --white: #F9F9F9;
 
-/* font */
+  /* font */
   --montserrat: "Montserrat", sans-serif;
 }
