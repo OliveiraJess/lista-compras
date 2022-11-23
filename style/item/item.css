@@ -23,7 +23,7 @@
 
 .card__item>input[type='checkbox']:checked+div {
   background-color: var(--gray);
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 
 .card__situation {
