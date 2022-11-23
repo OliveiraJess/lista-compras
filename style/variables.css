@@ -9,3 +9,17 @@
     --optionsHeight: 59px;
 
 }
+
+:root {
+
+    /* colors */
+    --black: #181818;
+    --delete: #FF5858;
+    --edit: #CDFCF6;
+    --gray: #D8D8D8;
+    --lilac: #BCCEF8;
+    --pastel: #FAF7F0;
+    --purple: #98A8F8;
+    --white: #F9F9F9;
+
+  }

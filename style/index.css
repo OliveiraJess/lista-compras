@@ -1,19 +1,14 @@
 @import url('reset/normalize.css');
 @import url('reset/reset.css');
-<<<<<<< HEAD
-@import url("/style/item/item.css");
-=======
 @import url('variables.css');
 @import url('buttons/dropDown.css');
->>>>>>> 666075051cf88cc60c2210ece0d4ab3684192acd
+@import url("/style/item/item.css");
 
 
 body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
-<<<<<<< HEAD
-=======
 
 #navigation {
     background-color: #98A8F8;
@@ -41,4 +36,3 @@ h1 {
     justify-content: space-around;
 
 }
->>>>>>> 666075051cf88cc60c2210ece0d4ab3684192acd
