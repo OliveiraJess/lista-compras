@@ -1,8 +1,37 @@
 @import url('reset/normalize.css');
 @import url('reset/reset.css');
+@import url('variables.css');
+@import url('buttons/dropDown.css');
 
 
 body {
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+#navigation {
+    background-color: #98A8F8;
+    height: 90px;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#filters {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+
+}
