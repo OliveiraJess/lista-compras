@@ -3,7 +3,9 @@
     --imgSpace: 20px;
     --arrowSize: min(70%, var(--imgSpace));
     --dropWidth: 30%;
-    --dropHeight: 30px;
-    --clickArea: calc(16px + var(--dropHeight));
+    --inputHeight: 30px;
+    --clickArea: calc(1em + var(--inputHeight));
+    --placeHoderY: calc((var(--inputHeight)/2) + (1em/2));
+    --optionsHeight: 59px;
 
 }
