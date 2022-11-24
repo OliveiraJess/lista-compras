@@ -50,6 +50,7 @@ main {
 .button__delete {
   align-items: center;
   background-color: var(--delete);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -59,6 +60,7 @@ main {
 .button__edit {
   align-items: center;
   background-color: var(--edit);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
