@@ -4,6 +4,7 @@
 @import url('buttons/dropDown.css');
 @import url("/style/item/item.css");
 @import url("/style/variables.css");
+@import url("/style/footer/footer.css");
 
 
 
@@ -37,5 +38,4 @@ h1 {
     margin-top: 5px;
     display: flex;
     justify-content: space-around;
-
 }
