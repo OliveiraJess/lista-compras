@@ -1,11 +1,11 @@
 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
-<rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
+    <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7"/>
 </svg>

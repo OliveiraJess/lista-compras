@@ -1,9 +1,80 @@
-@import url("/style/variables.css");
-
-
 main {
   margin-top: 15px;
+  height: calc(100% - 105px);
 }
+
+.item {
+  background-color: #BCCEF8;
+  height: max(6%,35px);
+  width: min(100%,1400px);
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.item .container {
+  flex-direction: row;
+  gap: 5px;
+  width: 97%;
+
+}
+
+.field {
+  appearance: none;
+  height: 65%;
+  border: none;
+  outline: none;
+
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+#checked {
+  min-width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+#checked:checked {
+  background-color: #8EECA8;
+  background-image: url('../image/checkmark.svg');
+  background-position: center center;
+
+}
+
+.item #tag {
+  width: 40%;
+  border-right: 2px solid black;
+  border-radius: 15px 0 0 15px;
+}
+
+.item #order {
+  width: 60%;
+  border-radius: 0 15px 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 .container__list {
   align-items: center;
@@ -124,4 +195,4 @@ main {
   .card__item {
     width: 50%;
   }
-}
+} */

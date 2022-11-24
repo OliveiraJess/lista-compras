@@ -1,0 +1,24 @@
+.btn {
+    border-radius: 10px;
+    border: none;
+    width: max(3%,35px);
+    height: 70%;
+    background-size:  55%;
+
+}
+
+button#pencil {
+    background-image: url('../image/pencil.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #CDFCF6;
+
+}
+
+button#trash {
+    background-image: url('../image/trash.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #FF9C9C;
+
+}

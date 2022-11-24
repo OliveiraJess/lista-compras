@@ -2,8 +2,8 @@
 @import url('reset/reset.css');
 @import url('variables.css');
 @import url('buttons/dropDown.css');
-@import url("/style/item/item.css");
-@import url("/style/variables.css");
+@import url('buttons/editRemove.css');
+@import url('item/item.css');
 
 
 
@@ -30,6 +30,7 @@ body {
 h1 {
     font-size: 2em;
     font-weight: bold;
+    transform: translateY(5px);
 }
 
 #filters {
