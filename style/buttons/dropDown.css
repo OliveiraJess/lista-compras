@@ -1,4 +1,4 @@
-
+/* area click */
 .click {
     position: absolute;
     width: 100%;
@@ -7,12 +7,12 @@
 
 }
 
+
 .drop_down {
     width: var(--dropWidth);
     position: relative;
     
 }
-
 
 
 /* arrown */
@@ -33,7 +33,7 @@ img[activated='true'] {
 
 
 
-button[filter] {
+.filter {
     text-align: left;
     border: none;
     box-shadow: 0px 0px 4px #00000040;

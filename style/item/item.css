@@ -1,6 +1,7 @@
 main {
   margin-top: 15px;
   height: calc(100% - 105px);
+
 }
 
 .item {
@@ -9,6 +10,7 @@ main {
   width: min(100%,1400px);
   border-radius: 10px;
   margin: 5px 0;
+
 }
 
 .item .container {
@@ -16,6 +18,11 @@ main {
   gap: 5px;
   width: 97%;
 
+}
+
+input:disabled {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .field {
@@ -39,6 +46,7 @@ main {
   height: 15px;
   border-radius: 3px;
   background-color: #ffffff;
+
 }
 
 #checked:checked {
@@ -52,11 +60,13 @@ main {
   width: 40%;
   border-right: 2px solid black;
   border-radius: 15px 0 0 15px;
+
 }
 
 .item #order {
   width: 60%;
   border-radius: 0 15px 15px 0;
+
 }
 
 
