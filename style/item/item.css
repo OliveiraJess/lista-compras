@@ -3,6 +3,7 @@
 
 main {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .container__list {
@@ -26,7 +27,7 @@ main {
   cursor: pointer;
 }
 
-.card__item>input[type='checkbox']:checked+ .card__situation {
+.card__item>input[type='checkbox']:checked+.card__situation {
   background-color: var(--gray);
 }
 

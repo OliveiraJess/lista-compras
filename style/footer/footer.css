@@ -1,18 +1,14 @@
 @import url("/style/variables.css");
 
 .container__footer {
+  align-items: center;
   background-color: var(--purple);
   bottom: 0;
+  display: flex;
+  flex-direction: column;
   height: 100px;
   left: 0;
   /* position: absolute; */
-  width: 100%;
-}
-
-.container__footer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -69,7 +65,7 @@
   outline: 0;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   .new__item {
     width: 120px;
   }
