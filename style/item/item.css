@@ -1,6 +1,5 @@
 @import url("/style/variables.css");
 
-
 main {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -13,6 +12,8 @@ main {
   width: 100%;
   height: calc(100vh - 210px);
   overflow-y: scroll;
+
+
 }
 
 .card__item {

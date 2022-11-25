@@ -6,7 +6,11 @@
 @import url("/style/variables.css");
 @import url("/style/footer/footer.css");
 
-
+::-webkit-scrollbar {
+    background-color: var(--purple);
+    border-radius: 10px;
+    width: 10px;
+  }
 
 body {
     /* height: 100vh; */
