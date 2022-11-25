@@ -8,7 +8,8 @@
   flex-direction: column;
   height: 100px;
   left: 0;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  position: absolute;
   width: 100%;
 }
 
