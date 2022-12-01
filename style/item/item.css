@@ -1,8 +1,8 @@
 @import url("/style/variables.css");
 
-
 main {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .container__list {
@@ -10,6 +10,10 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: calc(100vh - 210px);
+  overflow-y: scroll;
+
+
 }
 
 .card__item {
@@ -26,7 +30,7 @@ main {
   cursor: pointer;
 }
 
-.card__item>input[type='checkbox']:checked+ .card__situation {
+.card__item>input[type='checkbox']:checked+.card__situation {
   background-color: var(--gray);
 }
 

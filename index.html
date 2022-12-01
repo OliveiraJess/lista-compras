@@ -12,75 +12,256 @@
 
 <body>
 
-  <div id='navigation'>
+  <header>
+    <div id='navigation'>
 
-    <div class='container'>
+      <div class='container'>
 
-      <h1>TheList</h1>
+        <h1>TheList</h1>
 
-      <div id='filters'>
+        <div id='filters'>
 
-        <div class='drop_down' id='situation'>
-          <div class='click'></div>
-          <p activated='false'>situation</p>
-          <button filter><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+          <div class='drop_down' id='situation'>
+            <div class='click'></div>
+            <p activated='false'>situation</p>
+            <button filter><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
 
-          <div options='close'>
-            <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
-              <li>fff</li>
-            </ul>
+            <div options='close'>
+              <ul>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+                <li>ddd</li>
+                <li>eee</li>
+                <li>fff</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class='drop_down' id='tag'>
-          <div class='click'></div>
-          <p activated='false'>tag</p>
-          <button filter><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+          <div class='drop_down' id='tag'>
+            <div class='click'></div>
+            <p activated='false'>tag</p>
+            <button filter><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
 
-          <div options='close'>
-            <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
-              <li>fff</li>
-            </ul>
+            <div options='close'>
+              <ul>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+                <li>ddd</li>
+                <li>eee</li>
+                <li>fff</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class='drop_down' id='order'>
-          <div class='click'></div>
-          <p activated='false'>order</p>
-          <button filter><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+          <div class='drop_down' id='order'>
+            <div class='click'></div>
+            <p activated='false'>order</p>
+            <button filter><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
 
-          <div options='close'>
-            <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
-              <li>fff</li>
-            </ul>
+            <div options='close'>
+              <ul>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+                <li>ddd</li>
+                <li>eee</li>
+                <li>fff</li>
+              </ul>
+            </div>
           </div>
+
         </div>
 
       </div>
 
     </div>
-
-  </div>
-
+  </header>
   <!-- segunda etapa -->
 
   <main>
     <div class="container__list" id='list'>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
 
       <label class="card__item">
         <div class="grab">
@@ -104,12 +285,133 @@
         </div>
 
         <div class="buttons">
-          <bubutton class="button__edit" ">
-            <span class="lnr lnr-pencil"></span>
-          </bubutton>
-          <bubutton class="button__delete">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
             <span class="lnr lnr-trash"></span>
-          </bubutton>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
+        </div>
+      </label>
+
+      <label class="card__item">
+        <div class="grab">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="3.375" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="3.375" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+            <rect x="6.75" y="6.75" width="2.25" height="2.25" fill="#A7A7A7" />
+          </svg>
+
+        </div>
+        <input class="button__checkbox" type="checkbox" />
+        <div class="card__situation">
+          <div class="situation__label">Etiqueta</div>
+          <div class="situation__item">Teste de item 1</div>
+        </div>
+
+        <div class="buttons">
+          <button class="button__edit" ">
+            <span class=" lnr lnr-pencil"></span>
+          </button>
+          <button class="button__delete">
+            <span class="lnr lnr-trash"></span>
+          </button>
         </div>
       </label>
 
@@ -395,6 +697,43 @@
 
     </div>
   </main>
+
+  <footer >
+    <div class="container__footer">
+
+      <div class="card__footer">
+
+        <div class='drop_down'>
+          <div class='click'></div>
+          <p activated='false'>etiqueta</p>
+          <button filter><img activated='false' src='style/image/arrow_down.svg'></button>
+
+          <div options='close'>
+            <ul>
+              <li>aaa</li>
+              <li>bbb</li>
+              <li>ccc</li>
+              <li>ddd</li>
+              <li>eee</li>
+              <li>fff</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="submit">
+          <div class="submit__input">
+            <label for="new__item">item</label>
+            <input class="new__item" type="text" id="new__item" />
+          </div>
+          <div class="submit__button">
+            <button type="submit" class="button__submit">+</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
 
   <script src='index.js'></script>
 </body>
