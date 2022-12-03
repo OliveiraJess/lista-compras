@@ -1,11 +1,16 @@
-const drops = document.querySelectorAll('.drop_down')
+const drops = []
+document.querySelectorAll('.drop_down').forEach(drop => drops.push(drop))
+document.querySelectorAll('.drop_down2').forEach(drop => drops.push(drop))
+
 drops.forEach(drop => {
+    
     const areasClick = drop.querySelectorAll('.click')
     let arrown = drop.querySelector('img[activated]')
     const options = drop.querySelector('div[options]')
     const button = drop.querySelector('.filter')
     const placeholder = drop.querySelector('p[activated]')
     const subOptions = options.querySelectorAll('li')
+    const areaButton = drop.querySelector('button div[contenteditable]')
 
     areasClick.forEach(areaClick => {
         areaClick.addEventListener('click',() => {
@@ -20,19 +25,34 @@ drops.forEach(drop => {
                 options.setAttribute('options', 'close')
 
             }
+            
+            if(drop.getAttribute('class') == 'drop_down2') {
+                areaButton.focus()
+                placeholder.setAttribute('activated','true')
+
+            }
 
         })
         
+
         subOptions.forEach(option => {
             option.addEventListener('click',() => {
                 placeholder.setAttribute('activated','true')
-                button.innerHTML = `${option.textContent}<img activated='true' src='style/image/arrow_down.svg' alt='arrow'>`
+                if(drop.getAttribute('class') != 'drop_down2') {
+                    button.innerHTML = `${option.textContent}<img activated='true' src='style/image/arrow_down.svg' alt='arrow'>`
+                } 
+                else {
+                    areaButton.textContent = `${option.textContent}`
+                }
 
                 arrown = drop.querySelector('img[activated]')
             })
 
         })
 
+
+
     })
 
 })
+

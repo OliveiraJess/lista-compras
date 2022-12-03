@@ -2,7 +2,9 @@
 @import url('reset/reset.css');
 @import url('variables.css');
 @import url('buttons/dropDown.css');
+@import url('buttons/dropDown2.css');
 @import url('buttons/editRemove.css');
+@import url('buttons/create.css');
 @import url('item/item.css');
 
 
@@ -11,11 +13,27 @@ body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--pastel);
+    display: flex;
+    flex-direction: column;
 }
 
 #navigation {
     background-color: #98A8F8;
     height: 90px;
+
+}
+
+#create_item,#create_item:focus  {
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 30px;
+    align-self: flex-start;
+    transform: translateY(1em);
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #00000040;
 }
 
 .container {
@@ -25,12 +43,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+main {
+    margin-top: 15px;
+    flex-grow: 1;
+
+}
+
+footer {
+    background-color: #98A8F8;
+    padding: 10px 0;
+
+}
+
+footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 h1 {
     font-size: 2em;
     font-weight: bold;
     transform: translateY(5px);
+
 }
 
 #filters {

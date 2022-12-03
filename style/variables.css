@@ -13,7 +13,7 @@
 
 
 /* dropDown */
-.drop_down {
+.drop_down,.drop_down2 {
     --imgSpace: 20px;
     --arrowSize: min(70%, var(--imgSpace));
     --dropWidth: 30%;

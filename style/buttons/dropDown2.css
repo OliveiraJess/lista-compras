@@ -4,11 +4,10 @@
     width: 100%;
     height: var(--clickArea);
     z-index: 2;
-
 }
 
 
-.drop_down {
+.drop_down2 {
     min-width: var(--dropWidth);
     position: relative;
     
@@ -16,7 +15,7 @@
 
 
 /* arrown */
-.drop_down img[activated][alt='arrow'] {
+.drop_down2 img[activated][alt='arrow'] {
     height: var(--arrowSize);
     position: absolute;
     right: 0;
@@ -25,7 +24,7 @@
     
 }
 
-.drop_down img[activated='true'][alt='arrow'] {
+.drop_down2 img[activated='true'][alt='arrow'] {
     transform: rotate(180deg);
 
 }
@@ -33,7 +32,7 @@
 
 
 
-.drop_down .filter {
+.drop_down2 .filter {
     text-align: left;
     border: none;
     box-shadow: 0px 0px 4px #00000040;
@@ -43,14 +42,19 @@
     height: var(--inputHeight);
     position: relative;
     border-radius: 10px;
-
 }
 
 
+.drop_down2 div[contenteditable]:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
 
 /* options */
-.drop_down div[options] {
-    position: absolute;
+.drop_down2 div[options] {
+    /* position: absolute; */
     width: 100%;
     margin-top: 4px;
     border-radius: 10px;
@@ -58,25 +62,24 @@
     box-shadow: 0px 0px 4px #00000040;
     overflow-y: scroll;
     transition: all .5s ease-in-out;
-
 }
 
-.drop_down div[options]::-webkit-scrollbar {
+.drop_down2 div[options]::-webkit-scrollbar {
     appearance: none;
     width: 0px;
 
 }
 
-.drop_down div[options = 'open'] {
+.drop_down2 div[options = 'open'] {
     max-height: var(--optionsHeight);
 }
 
-.drop_down div[options = 'close'] {
+.drop_down2 div[options = 'close'] {
     max-height: 0px;
 
 }
 
-.drop_down div[options = 'open'] ul, div[options = 'close'] ul {
+.drop_down2 div[options = 'open'] ul, div[options = 'close'] ul {
     display: flex;
     height: 100%;
     padding: 0 10px;
@@ -89,7 +92,7 @@
 
 
 /* placeHoder */
-.drop_down p[activated] {
+.drop_down2 p[activated] {
     position: relative;
     z-index: 1;
     transition: all .5s ease-in-out;
@@ -97,12 +100,12 @@
 }
 
 
-.drop_down p[activated ='false'] {
+.drop_down2 p[activated ='false'] {
     transform: translate(10px, var(--placeHoderY));
     
 }
 
-.drop_down p[activated = 'true']  {
+.drop_down2 p[activated = 'true']  {
     transform: translate(0, 0);
 
 }

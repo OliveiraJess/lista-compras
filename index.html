@@ -11,95 +11,115 @@
 
 <body>
 
-  <div id='navigation'>
+  	<div id='navigation'>
 
-    <div class='container'>
+		<div class='container'>
 
-      <h1>TheList</h1>
+			<h1>TheList</h1>
 
-      <div id='filters'>
+			<div id='filters'>
 
-        <div class='drop_down' id='situation'>
-          <div class='click'></div>
-          <p activated='false'>situation</p>
-          <button class="filter"><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+				<div class='drop_down' id='situation'>
+					<div class='click'></div>
+					<p activated='false'>situation</p>
+					<button class='filter'><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
 
-          <div options='close'>
-            <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
-              <li>fff</li>
-            </ul>
-          </div>
-        </div>
+					<div options='close'>
+						<ul>
+						<li>ok</li>
+						<li>not ok</li>
+						<li>both</li>
+						</ul>
+					</div>
+				</div>
 
-        <div class='drop_down' id='tag'>
-          <div class='click'></div>
-          <p activated='false'>tag</p>
-          <button class="filter"><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+				<div class='drop_down' id='tag'>
+					<div class='click'></div>
+					<p activated='false'>tag</p>
+					<button class='filter'><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
 
-          <div options='close'>
-            <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
-              <li>fff</li>
-            </ul>
-          </div>
-        </div>
+					<div options='close'>
+						<ul>
+						<li>aaa</li>
+						<li>bbb</li>
+						<li>ccc</li>
+						<li>ddd</li>
+						<li>eee</li>
+						<li>fff</li>
+						</ul>
+					</div>
+				</div>
 
-        <div class='drop_down' id='order'>
-          <div class='click'></div>
-          <p activated='false'>order</p>
-          <button class="filter"><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+				<div class='drop_down' id='order'>
+					<div class='click'></div>
+					<p activated='false'>order</p>
+					<button class='filter'><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
 
-          <div options='close'>
-            <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
-              <li>fff</li>
-            </ul>
-          </div>
-        </div>
+					<div options='close'>
+						<ul>
+						<li>a - z</li>
+						<li>z - a</li>
+						</ul>
+					</div>
+				</div>
 
-      </div>
+			</div>
 
-    </div>
+		</div>
 
-  </div>
+	</div>
 
 
-  <main>
+	<main>
 
-    <div class="container">
+		<div class='container'>
 
-      <div class="item">
-        <div class="container">
-          <img src="style/image/grab.svg" alt="grab">
-          <input type="checkbox" class="field" id="checked">
-          <div class="text">
-            <input type="text" value="" class="field" id="tag" disabled>
-            <input type="text" value="" class="field" id="order" disabled>
-          </div>
-          <button class="btn" id="pencil"></button>
-          <button class="btn" id="trash"></button>
-        </div>
-      </div>
+			<div class='item'>
+				<div class='container'>
+				<img src='style/image/grab.svg' alt='grab'>
+				<input type='checkbox' class='field' id='checked'>
+				<div class='text'>
+					<input type='text' value='' class='field' id='tag' disabled>
+					<input type='text' value='' class='field' id='order' disabled>
+				</div>
+				<button class='btn' id='pencil'></button>
+				<button class='btn' id='trash'></button>
+				</div>
+			</div>
 
-    </div>
+		</div>
 
-  </main>
+	</main>
 
+	
+	<footer>
 
-  <script src='index.js'></script>
+		<div class="container">
+
+			<div class='drop_down2' id='create_tag'>
+				<div class='click'></div>
+				<p activated='false'>tag</p>
+				<button class='filter'><div contenteditable="true"></div><img activated='false' src='style/image/arrow_down.svg' alt='arrow'></button>
+
+				<div options='close'>
+					<ul>
+					<li>Ok</li>
+					<li>Not Ok</li>
+					<li>both</li>
+					</ul>
+				</div>
+			</div>
+
+			<input id="create_item" type="text" name="" id="">
+
+			<button class="create"></button>
+
+		</div>
+
+	</footer>
+	
+	
+	<script src='index.js'></script>
 </body>
 
 </html>
