@@ -1,6 +1,6 @@
 .item {
   background-color: #BCCEF8;
-  height: max(6%,35px);
+  height: 35px;
   width: min(100%,1400px);
   border-radius: 10px;
   margin: 5px 0;

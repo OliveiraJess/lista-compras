@@ -2,9 +2,8 @@
     border-radius: 10px;
     border: none;
     width: max(3%,35px);
-    height: 70%;
+    height: 28px;
     background-size:  55%;
-
 }
 
 button#pencil {
