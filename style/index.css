@@ -7,6 +7,10 @@
 @import url('buttons/create.css');
 @import url('item/item.css');
 
+::-webkit-scrollbar {
+    appearance: none;
+    
+}
 
 body {
     height: 100vh;
