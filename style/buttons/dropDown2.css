@@ -30,19 +30,28 @@
 }
 
 
-
-
 .drop_down2 .filter {
     text-align: left;
     border: none;
     box-shadow: 0px 0px 4px #00000040;
     padding: 0 var(--imgSpace) 0 10px;
     background-color: #ffffff;
-    min-width: 100%;
+    width: 100%;
     height: var(--inputHeight);
     position: relative;
     border-radius: 10px;
 }
+
+
+/* area text */
+.drop_down2 input, .drop_down2 input:focus {
+    width: 100%;
+    padding: 0;
+    outline: none;
+    border: none;
+
+}
+
 
 
 .drop_down2 div[contenteditable]:focus {

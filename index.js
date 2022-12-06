@@ -1,3 +1,4 @@
+// DROPS
 const drops = []
 document.querySelectorAll('.drop_down').forEach(drop => drops.push(drop))
 document.querySelectorAll('.drop_down2').forEach(drop => drops.push(drop))
@@ -10,7 +11,7 @@ drops.forEach(drop => {
     const button = drop.querySelector('.filter')
     const placeholder = drop.querySelector('p[activated]')
     const subOptions = options.querySelectorAll('li')
-    const areaButton = drop.querySelector('button div[contenteditable]')
+    const areaButton = drop.querySelector('button input')
 
     areasClick.forEach(areaClick => {
         areaClick.addEventListener('click',() => {
@@ -42,7 +43,7 @@ drops.forEach(drop => {
                     button.innerHTML = `${option.textContent}<img activated='true' src='style/image/arrow_down.svg' alt='arrow'>`
                 } 
                 else {
-                    areaButton.textContent = `${option.textContent}`
+                    areaButton.value = `${option.textContent}`
                 }
 
                 arrown = drop.querySelector('img[activated]')
@@ -56,3 +57,13 @@ drops.forEach(drop => {
 
 })
 
+
+
+
+// CREATE ITME
+const creatItem = document.querySelector('#create_item')
+creatItem.addEventListener('click', () => {
+    const placeholder = creatItem.querySelector('p')
+    placeholder.setAttribute('activated','true')
+
+})

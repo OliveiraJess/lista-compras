@@ -24,9 +24,25 @@ body {
 }
 
 #create_item {
-    width: 50%;
+    min-width: 50%;
     align-self: flex-start;
+
 }
+
+
+#create_item  p[activated ='false'] {
+    transform: translate(10px, var(--placeHoderY));
+    transition: all .5s ease-in-out;
+
+}
+
+#create_item  p[activated = 'true']  {
+    transform: translate(0, 0);
+    transition: all .5s ease-in-out;
+
+}
+
+
 
 #create_item input[type="text"],#create_item input[type="text"]:focus {
     width: calc(100% - 20px);
@@ -63,7 +79,7 @@ footer {
 footer .container {
     flex-direction: row;
     justify-content: space-between;
-
+    gap: 10px;
 }
 
 h1 {
