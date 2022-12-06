@@ -61,12 +61,6 @@
 
 }
 
-/* .drop_down div[options]::-webkit-scrollbar {
-    appearance: none;
-    width: 0px;
-
-} */
-
 .drop_down div[options = 'open'] {
     max-height: var(--optionsHeight);
 }
