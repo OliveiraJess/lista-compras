@@ -73,12 +73,6 @@
     transition: all .5s ease-in-out;
 }
 
-.drop_down2 div[options]::-webkit-scrollbar {
-    appearance: none;
-    width: 0px;
-
-}
-
 .drop_down2 div[options = 'open'] {
     max-height: var(--optionsHeight);
 }

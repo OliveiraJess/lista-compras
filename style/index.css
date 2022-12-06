@@ -9,7 +9,7 @@
 
 ::-webkit-scrollbar {
     appearance: none;
-    
+    width: 0;
 }
 
 body {
