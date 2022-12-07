@@ -52,6 +52,7 @@ input:disabled {
 
 .item #tag {
   width: 40%;
+  padding-left: 10px;
   border-right: 2px solid #b9cff6;
   border-radius: 15px 0 0 15px;
 
