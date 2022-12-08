@@ -144,23 +144,32 @@ drops.forEach(drop => {
 
 ////////////// jessica
 
-//banco de dados statico
-let banco = [{
-        "etiqueta": "carnes",
-        "a": "frango",
-        "checked": "true"
-    },
-    {
-        "etiqueta": "doces",
-        "a": "chocolate",
-        "checked": ""
-    },
-    {
-        "etiqueta": "frutas",
-        "a": "banana",
-        "checked": ""
-    }
-];
+
+const getBanco = () => JSON.parse(localStorage.getItem("cardItens")) ?? [];
+
+
+const setBanco = () => localStorage.setItem("cardItens", JSON.stringify(banco))
+
+//banco
+const banco = getBanco();
+
+//banco de dados statico para teste
+// let banco = [{
+//         "etiqueta": "carnes",
+//         "a": "frango",
+//         "checked": "true"
+//     },
+//     {
+//         "etiqueta": "doces",
+//         "a": "chocolate",
+//         "checked": ""
+//     },
+//     {
+//         "etiqueta": "frutas",
+//         "a": "banana",
+//         "checked": ""
+//     }
+// ];
 
 //criar item
 const criarItens = (etiqueta, a, checked, indice) => {
@@ -218,7 +227,7 @@ const clickItem = () => {
             "a": text.value,
             "checked": ""
         });
-
+        setBanco(banco)
         atualizarTela();
     }
 }
