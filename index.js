@@ -201,17 +201,26 @@ const atualizarTela = () => {
 const tag = document.getElementById("criarTag");
 const text = document.getElementById("criarItem");
 
-const clickItem = (evento) => {
+const clickItem = () => {
 
-    console.log("clicado")
+    //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
+    if (tag.value === null || tag.value === "" && text.value === null || text.value === "") {
 
-    banco.push({
-        "etiqueta": tag.value,
-        "a": text.value,
-        "checked": ""
-    })
+        console.log("Em branco")
+        alert("Você precisa preencher os campos abaixo.")
 
-    atualizarTela();
+    } else {
+
+        console.log("Clicado")
+
+        banco.push({
+            "etiqueta": tag.value,
+            "a": text.value,
+            "checked": ""
+        });
+
+        atualizarTela();
+    }
 }
 
 document.getElementById("create").addEventListener('click', clickItem);
