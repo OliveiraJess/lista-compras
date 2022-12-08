@@ -145,98 +145,98 @@ drops.forEach(drop => {
 ////////////// jessica
 
 
-const getBanco = () => JSON.parse(localStorage.getItem("cardItens")) ?? [];
+const getBank = () => JSON.parse(localStorage.getItem("cardItens")) ?? [];
 
 
-const setBanco = () => localStorage.setItem("cardItens", JSON.stringify(banco))
+const setBank = () => localStorage.setItem("cardItens", JSON.stringify(bank))
 
-//banco
-const banco = getBanco();
+//bank
+const bank = getBank();
 
-//banco de dados statico para teste
-// let banco = [{
-//         "etiqueta": "carnes",
-//         "a": "frango",
+//bank de dados statico para teste
+// let bank = [{
+//         "label": "carnes",
+//         "item": "frango",
 //         "checked": "true"
 //     },
 //     {
-//         "etiqueta": "doces",
-//         "a": "chocolate",
+//         "label": "doces",
+//         "item": "chocolate",
 //         "checked": ""
 //     },
 //     {
-//         "etiqueta": "frutas",
-//         "a": "banana",
+//         "label": "frutas",
+//         "item": "banana",
 //         "checked": ""
 //     }
 // ];
 
 //criar item
-const criarItens = (etiqueta, a, checked, indice) => {
-    const item = document.createElement("div");
-    item.classList.add('item');
-    item.innerHTML = `
+const createList = (label, element, checked, indice) => {
+    const list = document.createElement("div");
+    list.classList.add('item');
+    list.innerHTML = `
     <div class='container'>
     <img src='style/image/grab.svg'>
     <input type='checkbox' ${checked} data-indice=${indice} class='field' id='checked'>
     <div class='text'>
-      <input type='text' value=${etiqueta} class='field' id='tag' disabled>
-      <input type='text' value=${a} class='field' id='order' disabled>
+      <input type='text' value=${label} class='field' id='tag' disabled>
+      <input type='text' value=${element} class='field' id='order' disabled>
     </div>
     <button class='btn' id='pencil' data-indice=${indice}></button>
     <button class='btn' id='trash' data-indice=${indice}></button>
   </div>
     `
-    document.getElementById('cardItens').appendChild(item);
+    document.getElementById('cardItens').appendChild(list);
 }
 
 
 //limpar tarefas
-const limparTarefas = () => {
-    const list = document.getElementById('cardItens');
+const clearList = () => {
+    const clear = document.getElementById('cardItens');
 
-    while (list.firstChild) {
-        list.removeChild(list.lastChild)
+    while (clear.firstChild) {
+        clear.removeChild(clear.lastChild)
     }
 }
 
 //atualizar tela
-const atualizarTela = () => {
-    limparTarefas();
-    // const banco = getBanco();
-    banco.forEach((itens, indice) => criarItens(itens.etiqueta, itens.a, itens.checked, indice));
+const updateListScreen = () => {
+    clearList();
+    bank.forEach((item, indice) => createList(item.label, item.element, item.checked, indice));
 }
 
-const tag = document.getElementById("criarTag");
-const text = document.getElementById("criarItem");
+const label = document.getElementById("criarTag");
+const element = document.getElementById("criarItem");
 
-const clickItem = () => {
+const clickAddList = () => {
 
     //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
-    if (tag.value === null || tag.value === "" && text.value === null || text.value === "") {
+    if (label.value === null || label.value === "" && element.value === null || element.value === "") {
 
-        console.log("Em branco")
-        alert("Você precisa preencher os campos abaixo.")
+        console.log("Campos em branco")
+        alert("Você precisa preencher os campos abaixo para continuar.")
 
     } else {
 
         console.log("Clicado")
 
-        banco.push({
-            "etiqueta": tag.value,
-            "a": text.value,
+        bank.push({
+            "label": label.value,
+            "element": element.value,
             "checked": ""
         });
-        setBanco(banco)
-        atualizarTela();
+
+        setBank(bank)
+        updateListScreen();
     }
 }
 
-document.getElementById("create").addEventListener('click', clickItem);
+document.getElementById("create").addEventListener('click', clickAddList);
 
-atualizarTela();
+updateListScreen();
 
 //options
 //pegar valores digitados
-//colocar num banco de dados
+//colocar num bank de dados
 //exibir nas opções com innerhtml ou foreach...
