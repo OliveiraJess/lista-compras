@@ -150,10 +150,10 @@ const getBank = () => JSON.parse(localStorage.getItem("cardItens")) ?? [];
 
 const setBank = () => localStorage.setItem("cardItens", JSON.stringify(bank))
 
-//bank
+//banco
 const bank = getBank();
 
-//bank de dados statico para teste
+//banco de dados statico para teste
 // let bank = [{
 //         "label": "carnes",
 //         "item": "frango",
@@ -171,7 +171,7 @@ const bank = getBank();
 //     }
 // ];
 
-//criar item
+//criar lista
 const createList = (label, element, checked, indice) => {
     const list = document.createElement("div");
     list.classList.add('item');
@@ -191,7 +191,7 @@ const createList = (label, element, checked, indice) => {
 }
 
 
-//limpar tarefas
+//limpar tarefas para não aparecerem repetindas na tela
 const clearList = () => {
     const clear = document.getElementById('cardItens');
 
@@ -209,9 +209,10 @@ const updateListScreen = () => {
 const label = document.getElementById("criarTag");
 const element = document.getElementById("criarItem");
 
+ //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
+ // enviar etiqueta e elemento para a lista ao clicar no botão +
 const clickAddList = () => {
 
-    //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
     if (label.value === null || label.value === "" && element.value === null || element.value === "") {
 
         console.log("Campos em branco")
@@ -227,7 +228,7 @@ const clickAddList = () => {
             "checked": ""
         });
 
-        setBank(bank)
+        setBank(bank);
         updateListScreen();
     }
 }
