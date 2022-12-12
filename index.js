@@ -171,24 +171,47 @@ const bank = getBank();
 //     }
 // ];
 
+
 //criar lista
-const createList = (label, element, checked, indice) => {
+const createList = (label, element, checked, index) => {
     const list = document.createElement("div");
     list.classList.add('item');
     list.innerHTML = `
     <div class='container'>
     <img src='style/image/grab.svg'>
-    <input type='checkbox' ${checked} data-indice=${indice} class='field' id='checked'>
+    <input type='checkbox' ${checked} data-index=${index} class='field' id='checked'>
     <div class='text'>
       <input type='text' value=${label} class='field' id='tag' disabled>
       <input type='text' value=${element} class='field' id='order' disabled>
     </div>
-    <button class='btn' id='pencil' data-indice=${indice}></button>
-    <button class='btn' id='trash' data-indice=${indice}></button>
+    <button class='btn' id='pencil' data-index=${index}></button>
+    <button class='btn' id='trash' data-index=${index}></button>
   </div>
     `
     document.getElementById('cardItens').appendChild(list);
 }
+
+
+// criar etiqueta
+const createLabel = (label, index) => {
+    const optionLabel = document.createElement("li");
+    optionLabel.classList.add('option');
+    optionLabel.innerHTML = `
+    ${label}
+    `
+    document.getElementById('optionsLabel').appendChild(optionLabel);
+}
+
+
+//limpar etiquetas para não aparecerem repetindas nas opções
+const clearLabel = () => {
+    const clear = document.getElementById('optionsLabel');
+
+    while (clear.firstChild) {
+        clear.removeChild(clear.lastChild)
+    }
+}
+
 
 
 //limpar tarefas para não aparecerem repetindas na tela
@@ -203,14 +226,16 @@ const clearList = () => {
 //atualizar tela
 const updateListScreen = () => {
     clearList();
-    bank.forEach((item, indice) => createList(item.label, item.element, item.checked, indice));
+    clearLabel();
+    bank.forEach((item, index) => createList(item.label, item.element, item.checked, index));
+    bank.forEach((label) => createLabel(label.label));
+
 }
 
 const label = document.getElementById("criarTag");
 const element = document.getElementById("criarItem");
 
- //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
- // enviar etiqueta e elemento para a lista ao clicar no botão +
+// enviar etiqueta e elemento para a lista ao clicar no botão +
 const clickAddList = () => {
 
     if (label.value === null || label.value === "" && element.value === null || element.value === "") {
@@ -237,7 +262,7 @@ document.getElementById("create").addEventListener('click', clickAddList);
 
 updateListScreen();
 
-//options
-//pegar valores digitados
-//colocar num bank de dados
-//exibir nas opções com innerhtml ou foreach...
+//para corrigir:
+//apagar valor digitado apos ser inserido
+//ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
+//label repetida sendo add
