@@ -258,11 +258,40 @@ const clickAddList = () => {
     }
 }
 
+//remover item
+const deletItem = (indice) => {
+    //recorta/modifica o array
+    bank.splice(indice, 1);
+    updateListScreen();
+}
+
+//pega o evento pelo id e chama a função correspondente
+const clickButtons = (evento) => {
+
+    const clickButton = evento.target
+    const indice = clickButton.dataset.indice
+
+    if (clickButton.id === "trash") {
+        console.log("excluir");
+        deletItem(indice);
+    }
+    if (clickButton.id === "pencil") {
+        console.log("editar");
+
+    } else if (clickButton.type === "checkbox") {
+        // atualizarItem(indice);
+        console.log("checado");
+    }
+}
+
 document.getElementById("create").addEventListener('click', clickAddList);
+
+document.getElementById("cardItens").addEventListener('click', clickButtons)
 
 updateListScreen();
 
 //para corrigir:
+
 //apagar valor digitado apos ser inserido
 //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
 //label repetida sendo add
