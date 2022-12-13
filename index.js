@@ -266,3 +266,4 @@ updateListScreen();
 //apagar valor digitado apos ser inserido
 //ERRO - conferir depois pq a tag mesmo estando em branco ou nula é enviada.
 //label repetida sendo add
+//clicar na etiqueta
