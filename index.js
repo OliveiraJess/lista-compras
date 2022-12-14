@@ -259,27 +259,26 @@ const clickAddList = () => {
 }
 
 //remover item
-const deletItem = (indice) => {
+const deletItem = (index) => {
     //recorta/modifica o array
-    bank.splice(indice, 1);
+    bank.splice(index, 1);
     updateListScreen();
 }
 
 //pega o evento pelo id e chama a função correspondente
-const clickButtons = (evento) => {
+const clickButtons = (event) => {
 
-    const clickButton = evento.target
-    const indice = clickButton.dataset.indice
+    const clickButton = event.target
+    const index = clickButton.dataset.index
 
     if (clickButton.id === "trash") {
         console.log("excluir");
-        deletItem(indice);
+        deletItem(index);
     }
     if (clickButton.id === "pencil") {
         console.log("editar");
 
     } else if (clickButton.type === "checkbox") {
-        // atualizarItem(indice);
         console.log("checado");
     }
 }
