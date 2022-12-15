@@ -6,11 +6,22 @@
     background-size:  55%;
 }
 
-button#pencil {
+button[activated='true']#pencil {
+    background-image: url('../image/pencil.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #00ffe0;
+    /* box-shadow: 0px 0px 5px #00ffff; */
+    transition: all .5s ease-in-out;
+
+}
+
+button[activated='false']#pencil {
     background-image: url('../image/pencil.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #CDFCF6;
+    transition: all .5s ease-in-out;
 
 }
 
