@@ -1,4 +1,4 @@
-// create Item
+// create Item 
 const Item = (vTag,vItem) => {
     
     const element = {
@@ -63,7 +63,6 @@ const Item = (vTag,vItem) => {
     container.appendChild(pencil)
     container.appendChild(trash)
 
-
     item.addEventListener('dragstart', event => {
         item.setAttribute('drag',true)
         event.dataTransfer.setData('itemId',event.target.id)
@@ -77,12 +76,11 @@ const Item = (vTag,vItem) => {
   
     checked.addEventListener('click', () => {
         element.checked == false ? element.checked = true : element.checked = false 
-
+        console.log(element)
     })
 
     trash.addEventListener('click', () => {
         item.setAttribute('excluding',true)
-        Main().removeItem()
 
     })
 
@@ -121,8 +119,6 @@ const Item = (vTag,vItem) => {
 
 
 
-
-
 const Main = (itens) => {
    
     const main = document.querySelector('main')
@@ -134,19 +130,34 @@ const Main = (itens) => {
             const containers = element.html.querySelectorAll('.item_container')
             
             containers.forEach(container => {
-                const item = container.querySelector('div[excluding]')
-                if(item != null) {
+                const itemExcluding = container.querySelector('div[excluding]')
+                if(itemExcluding != null) {
                     container.setAttribute('excluding',true)
                     setTimeout(() => element.html.removeChild(container),500) 
                 }
 
             })
 
+            setTimeout(() => {
+                const itens =  document.querySelectorAll('.item')
+                const newItens = []
+
+                for(let index1 = 0; index1 < itens.length; index1++) {
+                    for(let index2 = 0; index2 < element.itens.length; index2++) {
+                        if(itens[index1].id == element.itens[index2].id) {
+                            newItens.push(element.itens[index2])
+                        }
+                    }
+                }
+
+                element.itens = newItens
+
+            },500)
+
         }
 
-
-
     }
+
 
     for(let index in element.itens) {
         const item_container = document.createElement('div')
@@ -175,9 +186,9 @@ const Main = (itens) => {
 
             container.appendChild(item)
 
-            const itens = document.querySelectorAll('.item')
+            const itensContainer = container.querySelectorAll('.item')
 
-            itens.forEach(newItem => {                
+            itensContainer.forEach(newItem => {                
                 if(newItem != item) {
                     containers.forEach(container => {
                         const containerNull = container.querySelector('.item') 
@@ -191,10 +202,45 @@ const Main = (itens) => {
                 
             })
 
+            const itens = document.querySelectorAll('.item')
+
+
+
+            
+
+            
+            const position = []
+            const newArray = []
+
+            for(let index = 0; index < itens.length; index++) {
+
+                if(itens[index].id != element.itens[index].id) {
+                    
+                    position.push(index)
+                    newArray.push(element.itens[index])
+
+                }
+
+            }
+
+            position.reverse()
+
+            for(let index = 0; index < itens.length; index++) {
+                element.itens[position[index]] = newArray[index]
+                
+            }
+
         })
 
     })
 
+    const trashs = document.querySelectorAll('#trash')
+    trashs.forEach(trash => {
+        trash.addEventListener('click', () => {
+            element.removeItem()
+        })
+
+    })
 
     element.html = main
 
