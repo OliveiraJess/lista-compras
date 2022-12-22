@@ -1,19 +1,19 @@
 import {Main} from '/script/main.js'
-import {Item} from '/script/item.js'
 import {TagCreat} from '/script/tagCreat.js'
+import {ButtonCreat} from '/script/buttonCreat.js'
 
 const main = Main()
 const tagCreat = TagCreat()
 
-
-tagCreat.addAlternative('aaaa')
-tagCreat.addAlternative('bbb')
-tagCreat.addAlternative('ccc')
-tagCreat.addAlternative('ddd')
-tagCreat.addAlternative('ccc')
+const create = ButtonCreat(main,tagCreat)
 
 
-main.addItem(Item('Vegetal','Cenoura'))
-main.addItem(Item('Vegetal','Abobrinha'))
-main.addItem(Item('Carne','Picanha'))
-main.addItem(Item('Bebida','Coca'))
+const creatItem = document.querySelector('#create_item')
+const placeholder = creatItem.querySelector('p')
+
+creatItem.addEventListener('click', () => {
+    placeholder.setAttribute('activated',true)
+    
+})
+
+

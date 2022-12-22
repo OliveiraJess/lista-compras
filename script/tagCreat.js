@@ -28,6 +28,7 @@ const TagCreat = () => {
 
             li.addEventListener('click',() => {
                 textArea.value = li.textContent
+                textArea.focus()
             })
         
 
@@ -84,10 +85,26 @@ const TagCreat = () => {
 
         }
         
+        const nodeTags = document.querySelectorAll('div.item input#tag')
+        const tags = []
+
+        nodeTags.forEach(tag => tags.push(tag.value))
+
+        const nodeLis = options.querySelectorAll('li')
+
+        for(let index in element.alternatives) {
+           if(!tags.includes(element.alternatives[index])) {
+                ul.removeChild(nodeLis[index])
+                element.alternatives.splice(index,1)
+
+            }
+                
+        }
+
     })    
     
     
     element.html = area
 
-    return element
+    return element 
 }
